@@ -1,7 +1,7 @@
 import hashlib
 
 def gen_hash_sha2(user_file_path):
-    # Open the file in binary mode & read the contents
+    # rb below opens and reads file in binary along with open fn
     with open(user_file_path, 'rb') as f:
         # Create a new SHA-256 hash object
         sha256 = hashlib.sha256()
